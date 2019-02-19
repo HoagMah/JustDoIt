@@ -11,3 +11,4 @@
     </ul>
   </li>
 <li><a href='{{ backpack_url('book') }}'><i class='fa fa-tag'></i> <span>Books</span></a></li>
+<li><a href='{{ backpack_url('unit') }}'><i class='fa fa-tag'></i> <span>Unit</span></a></li>
