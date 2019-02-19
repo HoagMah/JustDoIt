@@ -10,3 +10,4 @@
       <li><a href="{{ backpack_url('permission') }}"><i class="fa fa-key"></i> <span>Permissions</span></a></li>
     </ul>
   </li>
+<li><a href='{{ backpack_url('book') }}'><i class='fa fa-tag'></i> <span>Books</span></a></li>
