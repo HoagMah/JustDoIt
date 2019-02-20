@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 
-class Book extends Model
+class Unit extends Model
 {
     use CrudTrait;
 
@@ -15,11 +15,11 @@ class Book extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'books';
+    protected $table = 'units';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = ['name', 'author'];
+    protected $fillable = ['name', 'book_id'];
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -34,9 +34,9 @@ class Book extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function unit()
+    public function book()
     {
-        return $this->hasMany(Unit::class);
+        return $this->belongsTo(Book::class);
     }
     /*
     |--------------------------------------------------------------------------
